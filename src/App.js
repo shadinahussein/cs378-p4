@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="app">
       {/* <h1>On App</h1> */}
-        <BrowserRouter>
+        <BrowserRouter basename="/cs378-p4">
           <Routes>
           <Route exact path="/" element={<AuthLogIn currentUser={currentUser} setCurrentUser={setCurrentUser} />} />
           <Route path="/home" element={<HomePg currentUser={currentUser} setCurrentUser={setCurrentUser} />} />
